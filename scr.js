@@ -3,14 +3,14 @@ document.addEventListener("DOMContentLoaded", () => {
     const resultCard = document.getElementById("result");
     const displayData = document.getElementById("displayData");
 
-    // Initially hide the result card
+   
     resultCard.style.display = "none";
 
-    // Form submission handler
+  
     form.addEventListener("submit", (event) => {
         event.preventDefault(); // Prevent the default form submission behavior
 
-        // Collect form data
+
         const fullName = document.getElementById("fullName").value;
         const email = document.getElementById("email").value;
         const phone = document.getElementById("phone").value;
@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const gender = document.getElementById("gender").value;
         const address = document.getElementById("address").value;
 
-        // Display data dynamically
+       
         displayData.innerHTML = `
             <p><strong>Full Name:</strong> ${fullName}</p>
             <p><strong>Email:</strong> ${email}</p>
@@ -28,10 +28,10 @@ document.addEventListener("DOMContentLoaded", () => {
             <p><strong>Address:</strong> ${address}</p>
         `;
 
-        // Show the result card
+        
         resultCard.style.display = "block";
 
-        // Reset the form
+     
         form.reset();
     });
 });
