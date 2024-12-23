@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="page-wrapper">
+        <div class="container">
+            <div class="form-header">
+                <i class="fas fa-user-plus"></i>
+                <h2>Registration Form</h2>
+                <p>Join our amazing community today!</p>
+            </div>
+
+            <form id="registrationForm" method="Post" action="file.php">
+                <div class="form-group">
+                    <div class="input-group">
+                        <i class="fas fa-user"></i>
+                        <input type="text" id="fullName" name="fullName" required>
+                        <label for="fullName">Full Name</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="input-group">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" id="email" name="email" required>
+                        <label for="email">Email</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="input-group">
+                        <i class="fas fa-phone"></i>
+                        <input type="tel" id="phone" name="phone" required>
+                        <label for="phone">Phone</label>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group half">
+                        <div class="input-group">
+                            <i class="fas fa-calendar"></i>
+                            <input type="date" id="dob" name="dob" required>
+                            <label for="dob">Date of Birth</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group half">
+                        <div class="input-group">
+                            <i class="fas fa-venus-mars"></i>
+                            <select id="gender" name="gender" required>
+                                <option value="">Select Gender</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="input-group">
+                        <i class="fas fa-location-dot"></i>
+                        <textarea id="address" name="address" required></textarea>
+                        <label for="address">Address</label>
+                    </div>
+                </div>
+
+                <button type="submit">
+                    <span>Submit</span>
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </form>
+
+            <div id="result" class="result-card">
+                <div class="result-header">
+                    <i class="fas fa-check-circle"></i>
+                    <h3>Registration Successful!</h3>
+                </div>
+                <div id="displayData"></div>
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="scr.js"></script>
+    
+    
+
+</body>
+</html>
